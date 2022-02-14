@@ -31,7 +31,7 @@ jobs:
     - name: Install GNU gettext
       run: sudo apt install gettext
     - name: Build with Gradle
-      run: cd build/android; ./gradlew assembledebug
+      run: cd build/android; ./gradlew assemblerelease
     - name: Save armeabi artifact
       uses: actions/upload-artifact@v2
       with:
